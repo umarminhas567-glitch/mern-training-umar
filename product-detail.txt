@@ -1,1 +1,5 @@
+
 this is product list placeholder
+
+This is product detail placholder
+
