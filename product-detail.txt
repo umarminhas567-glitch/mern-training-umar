@@ -1,1 +1,2 @@
+this is new conflict
 this is conflict in main
