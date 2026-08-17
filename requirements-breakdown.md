@@ -1,4 +1,3 @@
-
 1. Functional Requirements
     1: all Users must be able to input search terms into a search bar located in the application header that are using.
     2: The system have to allow searching by product title, name, or category.
