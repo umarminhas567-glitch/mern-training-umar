@@ -13,7 +13,7 @@ export default function ProductCreatePage() {
     e.preventDefault();
     const token = localStorage.getItem('token');
     try {
-      const res = await fetch('http://localhost:5000/api/products', {
+      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api'}/products`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

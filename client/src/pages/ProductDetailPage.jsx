@@ -11,7 +11,7 @@ export default function ProductDetailPage() {
 
   useEffect(() => {
     const token = localStorage.getItem('token');
-    fetch('http://localhost:5000/api/products', {
+    fetch(`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api'}/products`, {
       headers: {
         'Authorization': `Bearer ${token}`
       }
@@ -31,7 +31,7 @@ export default function ProductDetailPage() {
   const handleDelete = async () => {
     const token = localStorage.getItem('token');
     try {
-      const res = await fetch(`http://localhost:5000/api/products/${id}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api'}/products/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`
